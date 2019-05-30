@@ -8,48 +8,6 @@ server.get("/", (req, res) => {
 
 //custom middleware
 
-//logger
-function logger(req, res, next) {
-  return (req, res, next) => {
-    console.log("req.body");
-    console.group("logger");
-    next();
-  };
-}
-server.use(logger());
+function logger(req, res, next) {}
 
-//validateUserID
-
-function validateUserID(req, res, next) {
-  return (req, res, next) => {
-    console.log("req.body");
-    console.group("validateUserId");
-    next();
-  };
-}
-server.use(validateUserID());
-
-//validateUser
-
-function validateUser(req, res, next) {
-  return (req, res, next) => {
-    console.log("req.body");
-    console.group("validateUser");
-    next();
-  };
-}
-server.use(validateUser());
-
-//validatePost
-
-function validatePost(req, res, next) {
-  return (req, res, next) => {
-    console.log("req.body");
-    console.group("validatePost");
-    next();
-  };
-}
-server.use(validatePost());
-
-//export
 module.exports = server;

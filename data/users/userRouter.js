@@ -11,7 +11,7 @@ const nameHandler = (req, res, next) => {
     next();
   }
 };
-
+// CRUD OPERATIONS ON USERS
 // Get
 router.get("/", (req, res) => {
   db.get()
@@ -122,5 +122,23 @@ router.get("/posts/:id", (req, res) => {
         .json({ message: "There was an error fetching this user's posts." });
     });
 });
+
+
+
+
+//custom middleware
+
+function validateUserId(req, res, next) {
+
+};
+
+function validateUser(req, res, next) {
+
+};
+
+function validatePost(req, res, next) {
+
+};
+
 
 module.exports = router;
