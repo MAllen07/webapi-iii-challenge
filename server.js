@@ -49,7 +49,7 @@ function validatePost(req, res, next) {
     next();
   };
 }
-server.us(validatePost());
+server.use(validatePost());
 
 //export
 module.exports = server;
