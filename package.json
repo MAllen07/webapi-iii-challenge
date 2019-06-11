@@ -4,7 +4,8 @@
   "description": "Web API Blog Project",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,12 @@
   "dependencies": {
     "express": "^4.16.4",
     "knex": "^0.16.3",
+    "migration": "^0.3.0",
+    "seeds": "^2.3.1",
     "sqlite3": "^4.0.6"
   },
   "devDependencies": {
     "knex-cleaner": "^1.1.4",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.19.1"
   }
 }
